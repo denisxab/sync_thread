@@ -1,7 +1,3 @@
-""""
-Создать класс для синхронной записи потоков
-Если запись занята потоки пропускают итерацию
-"""
 import random
 import time
 from sys import getsizeof
