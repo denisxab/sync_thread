@@ -4,6 +4,17 @@ from sys import getsizeof
 from typing import List, Union, Tuple
 
 
+class ThreadList:
+    def __init__(self, threadList: List):
+        self.myThreadList = threadList
+
+    def start(self):
+        list(th.start() for th in self.myThreadList)
+
+    def join(self):
+        list(th.join() for th in self.myThreadList)
+
+
 class SyncModData:
 
     # Создает потоки
